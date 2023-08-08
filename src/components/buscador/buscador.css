@@ -1,0 +1,33 @@
+.conteiner-buscador {
+  display: flex;
+  position: absolute;
+  top: 48%;
+  left: 20%;
+  width: 20em;
+  padding: 0.5em;
+  border-radius: 20px;
+  box-sizing: border-box;
+  background-color: rgba(179, 140, 55, 0.7);
+}
+
+.buscador-style {
+  border: none;
+  background: none;
+  width: 100%;
+  font-size: 1em;
+}
+
+.buscador-style::placeholder {
+  font-weight: bold;
+  font-size: 1.2em;
+  color: rgb(255, 255, 255, 0.7);
+}
+
+.buscador-style:focus {
+  outline: none;
+  color: white;
+}
+.icono {
+  font-size: 2em;
+  color: rgb(255, 255, 255, 0.7);
+}

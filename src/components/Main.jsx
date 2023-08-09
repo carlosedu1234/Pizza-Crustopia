@@ -1,21 +1,19 @@
 import React from "react";
 import TarjetaPizza from "../main/TarjetaProducto";
-import { useDatosPizza } from "../controllers/pizzaController.js";
+import { useMostrarDatosPizza } from "../services/pizzaController.js";
 function Main() {
-  const {data}= useDatosPizza.useMostrarDatosPizza("http://localhost:3000/pizza");
-  console.log(data);
+  const {data, loading, error}= useMostrarDatosPizza("http://localhost:3000/pizza");
+
   return (
     <main>
       <div className="main_conteiner-main">
+      {loading && <p>Cargando datos...</p>}
+      {error && <h1>Ocurrio un error al cargar los datos</h1>}
         <h1 className="main_titulo-style">Pizzas</h1>
         <h2 className="main_subtitulo-style">Ofertas del dia</h2>
-       {/*  {data?.map((datos)=> <TarjetaPizza key={datos.id}/>)}
- */}
-        <TarjetaPizza/>
-        <h2 className="main_subtitulo-style">Ofertas del dia</h2>
-        <TarjetaPizza/>
-        <h2 className="main_subtitulo-style">Ofertas del dia</h2>
-        <TarjetaPizza/>
+        <div  className="tarjeta_continer">{data?.map((datos)=><TarjetaPizza key={datos.id}/>)}</div>
+         
+      
       </div>
     </main>
   );

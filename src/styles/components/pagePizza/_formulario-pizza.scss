@@ -1,0 +1,46 @@
+.formulrio_conteiner{
+    text-align: center;
+    font-family:$textoS;
+    color:$colorT;
+}
+
+.conteiner_datos{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+            input{
+                border: none;
+                box-shadow: $showdS;
+                margin-bottom: 1em;
+                padding: 0.5em 1em;
+                border-radius: 10px;
+                outline: none;
+            }
+}
+
+.conteiner_mensaje{
+    display: flex;
+    margin: 0 auto;
+    font-size: 0.8em;
+    width: 30vw;
+    margin-bottom: 1em;
+    color: white;
+    box-sizing: border-box;
+    padding-left: 0.5em;
+    border-radius: 20px;
+    align-items: center;
+    background-color: rgb(255, 0, 0,0.7);
+    font-weight: bold;
+}
+.texto_label{
+    text-transform: capitalize;
+    min-width: 70px;
+}
+
+.boto_formulario{
+    margin-top: 1em;
+    border: none;
+    padding: 1em;
+    border-radius: 10px;
+    cursor: pointer;
+}

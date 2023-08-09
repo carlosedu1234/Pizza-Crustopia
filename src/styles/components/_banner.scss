@@ -1,0 +1,24 @@
+.banner_conteiner-banner {
+    width: 100%;
+    height: 40em;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+  }
+
+  .banner_titulo-banner {
+    position: absolute;
+    top: 12%;
+    left: 10%;
+    color: white;
+    font-size: 5em;
+    font-family:$textoS;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  

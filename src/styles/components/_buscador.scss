@@ -1,0 +1,40 @@
+.buscador_conteiner-buscador {
+    display: flex;
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    width: 20em;
+    padding: 0.5em;
+    border-radius: 20px;
+    box-sizing: border-box;
+    background-color: $colorP;
+    box-shadow:$showdP;
+  }
+  
+  .buscador_buscador-style {
+    border: none;
+    background: none;
+    width: 100%;
+    font-size: 1em;
+
+                &::placeholder{
+                    font-weight: bold;
+                    font-size: 1.2em;
+                    color: $colorHover;
+                }
+
+                &:focus {
+                    outline: none;
+                    color: white;
+                  }
+  }
+  
+  .buscador_buscador-style:focus {
+    outline: none;
+    color: white;
+  }
+  .buscador_icono {
+    font-size: 2em;
+    color: $colorHover;
+  }
+  

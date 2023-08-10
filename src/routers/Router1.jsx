@@ -8,7 +8,7 @@ function Router1() {
     <>
       <Routes>
         <Route path='home' element={<Home/>}/>
-        <Route path='ingredientesPizza' element={<IngredientesPizza/>}/>
+        <Route path='ingredientesPizza/:id' element={<IngredientesPizza/>}/>
         <Route path="/" element={<Navigate to="home"/>} />
       </Routes>
     </>

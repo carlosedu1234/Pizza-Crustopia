@@ -1,8 +1,11 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import InputsIngredientes from "./InputsIngredientes";
-function Formulario() {
-    
+
+function Formulario({data}) {
+
+
+
   const {
     register,
     handleSubmit,
@@ -13,13 +16,16 @@ function Formulario() {
     console.log(data);
   };
 
+  
+
   return (
     <div>
+
       <form
         className="formulrio_conteiner"
         onSubmit={handleSubmit(obtenerValores)}
       >
-        <h2>Ingredientes</h2>
+        <h2>{data.nombre}</h2>
         <InputsIngredientes  nombre={"queso"} errors={errors} register={register}/>
         <InputsIngredientes  nombre={"piña"} errors={errors} register={register}/>
         <InputsIngredientes  nombre={"pimiento"} errors={errors} register={register}/>

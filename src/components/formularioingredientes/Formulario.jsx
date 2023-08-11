@@ -31,7 +31,7 @@ function Formulario({data}) {
         <InputsIngredientes  nombre={"pimiento"} errors={errors} register={register}/>
         <InputsIngredientes  nombre={"porciones"} errors={errors} register={register}/>
 
-        <input className="boto_formulario" type="submit" />
+        <input className="formulrio_boton-formulario" type="submit" />
       </form>
     </div>
   );

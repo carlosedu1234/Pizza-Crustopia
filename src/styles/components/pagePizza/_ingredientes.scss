@@ -1,12 +1,22 @@
-.conteiner_ingredientes{
+.ingredientes_titulo-ingredientes{
+    text-align: center;
+    margin-top:0;
+    font-family:$textoS;
+    color:$colorT;
+    padding: 1em;
+    background-color: rgb(0, 0, 0,0.2);
+}
+.ingredientes_conteiner-ingredientes{
     display: flex;
-    margin: 0 auto;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5em auto;
     width: 60%;
     height: 80vh;
-    align-items: center;
-    gap: 6em;
+    align-items: left;
+    gap: 2em;
 }
-.conteiner_image{
+.ingredientes_conteiner-image{
     width: 40%;
     height: 50%;
   
@@ -20,11 +30,3 @@
             }
 }
 
-.titulo_ingredientes{
-    text-align: center;
-    margin-top:0;
-    font-family:$textoS;
-    color:$colorT;
-    padding: 1em;
-    background-color: rgb(0, 0, 0,0.2);
-}

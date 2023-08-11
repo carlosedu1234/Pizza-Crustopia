@@ -15,9 +15,9 @@ function IngredientesPizza() {
       {loading && <p>Cargando datos...</p>}
       {error && <h1>Ocurrio un error al cargar los datos</h1>}
       <Header />
-      <h1 className="titulo_ingredientes"> Selecciona ingredientes deseados</h1>
-      <div className="conteiner_ingredientes">
-        <div className="conteiner_image">
+      <h1 className="ingredientes_titulo-ingredientes"> Selecciona ingredientes deseados</h1>
+      <div className="ingredientes_conteiner-ingredientes">
+        <div className="ingredientes_conteiner-image">
           {" "}
           <img src={data.imagen} alt="pizza" />
         </div>

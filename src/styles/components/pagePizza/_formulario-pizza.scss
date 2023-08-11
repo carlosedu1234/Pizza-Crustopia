@@ -2,9 +2,12 @@
     text-align: center;
     font-family:$textoS;
     color:$colorT;
+                h2{
+                    margin-top: 0;
+                }
 }
 
-.conteiner_datos{
+.formulrio_conteiner-datos{
     display: flex;
     flex-wrap: wrap;
     gap: 1em;
@@ -18,7 +21,7 @@
             }
 }
 
-.conteiner_mensaje{
+.formulrio_conteiner-mensaje{
     display: flex;
     margin: 0 auto;
     font-size: 0.8em;
@@ -32,12 +35,12 @@
     background-color: rgb(255, 0, 0,0.7);
     font-weight: bold;
 }
-.texto_label{
+.formulrio_texto-label{
     text-transform: capitalize;
     min-width: 70px;
 }
 
-.boto_formulario{
+.formulrio_boton-formulario{
     margin-top: 1em;
     border: none;
     padding: 1em;

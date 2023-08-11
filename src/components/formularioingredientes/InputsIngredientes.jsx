@@ -3,8 +3,8 @@ import React from 'react';
 function InputsIngredientes({ nombre, errors, register }) {
   return (
     <div>
-      <div className="conteiner_datos">
-        <label htmlFor={nombre} className='texto_label'>{nombre}:</label>
+      <div className="formulrio_conteiner-datos">
+        <label htmlFor={nombre} className='formulrio_texto-label'>{nombre}:</label>
         <input
           id={nombre}
           placeholder={`Digite ${nombre}`}
@@ -17,12 +17,12 @@ function InputsIngredientes({ nombre, errors, register }) {
       </div>
 
       {errors[nombre]?.type === "required" && (
-        <div className="conteiner_mensaje">
+        <div className="formulrio_conteiner-mensaje">
           Porciones de {nombre} Requeridos
         </div>
       )}
       {errors[nombre]?.type === "maxLength" && (
-        <div className="conteiner_mensaje">Maximo 15 caracteres</div>
+        <div className="formulrio_conteiner-mensaje">Maximo 15 caracteres</div>
       )}
     </div>
   )
